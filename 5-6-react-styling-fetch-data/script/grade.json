@@ -1,0 +1,151 @@
+{
+  "score": 100,
+  "submissionPoints": 20,
+  "submissionNote": "On time (commit 2025-10-15T05:45:36.000Z <= due 2025-12-31T23:59:59.000Z)",
+  "tasks": {
+    "task1": {
+      "score": 30,
+      "max": 30
+    },
+    "task2": {
+      "score": 20,
+      "max": 20
+    },
+    "task3": {
+      "score": 30,
+      "max": 30
+    }
+  },
+  "rawTasksScore": 80,
+  "details": {
+    "task1": {
+      "name": "Task 1 — Apply Bootstrap Components (30 pts)",
+      "checks": [
+        {
+          "id": "app-container",
+          "desc": "App.jsx uses Container tags for header, content, footer",
+          "weight": 5,
+          "pass": true
+        },
+        {
+          "id": "header-classes",
+          "desc": "Header has Bootstrap classes: bg-primary text-white py-3 mb-4 shadow and header h1 and p class props",
+          "weight": 7,
+          "pass": true
+        },
+        {
+          "id": "searchbar-mb4",
+          "desc": "SearchBar.jsx root div has mb-4 class",
+          "weight": 3,
+          "pass": true
+        },
+        {
+          "id": "userlist-grid",
+          "desc": "UserList uses Alert variant=\"info\", Row and Col and returns after no-users condition and maps users into Col with UserCard",
+          "weight": 7,
+          "pass": true
+        },
+        {
+          "id": "usercard-button",
+          "desc": "UserCard uses Button with text \"View Details\" and onClick calls onUserClick(user)",
+          "weight": 4,
+          "pass": true
+        },
+        {
+          "id": "usermodal-structure",
+          "desc": "UserModal uses Modal with show/onHide and displays user fields and user-avatar-large and close Button",
+          "weight": 4,
+          "pass": true
+        }
+      ]
+    },
+    "task2": {
+      "name": "Task 2 — Apply Custom CSS Styling (20 pts)",
+      "checks": [
+        {
+          "id": "css-root-vars",
+          "desc": ":root variables for theme colors",
+          "weight": 5,
+          "pass": true
+        },
+        {
+          "id": "css-app",
+          "desc": ".app background-color and min-height rules",
+          "weight": 5,
+          "pass": true
+        },
+        {
+          "id": "css-user-card",
+          "desc": ".user-card rules border:none, background-color:white, transitions",
+          "weight": 4,
+          "pass": true
+        },
+        {
+          "id": "css-user-card-hover",
+          "desc": ".user-card:hover transform and box-shadow",
+          "weight": 3,
+          "pass": true
+        },
+        {
+          "id": "css-avatars",
+          "desc": ".user-avatar and .user-avatar-large rules present",
+          "weight": 3,
+          "pass": true
+        },
+        {
+          "id": "css-media-query",
+          "desc": "responsive media query for .user-avatar at max-width: 768px",
+          "weight": 0,
+          "pass": true
+        }
+      ]
+    },
+    "task3": {
+      "name": "Task 3 — Fetch Data with React Hooks (30 pts)",
+      "checks": [
+        {
+          "id": "hooks-import",
+          "desc": "App.jsx imports useState and useEffect",
+          "weight": 3,
+          "pass": true
+        },
+        {
+          "id": "state-vars",
+          "desc": "State variables users/filteredUsers/loading/error/searchTerm/showModal/selectedUser exist",
+          "weight": 7,
+          "pass": true
+        },
+        {
+          "id": "fetch-effect",
+          "desc": "useEffect that fetches https://jsonplaceholder.typicode.com/users and sets state (setUsers & setFilteredUsers)",
+          "weight": 8,
+          "pass": true
+        },
+        {
+          "id": "filter-effect",
+          "desc": "useEffect that filters users when searchTerm or users change",
+          "weight": 5,
+          "pass": true
+        },
+        {
+          "id": "modal-handlers",
+          "desc": "handleUserClick and handleCloseModal functions set selected user and show/hide modal",
+          "weight": 4,
+          "pass": true
+        },
+        {
+          "id": "loading-error-render",
+          "desc": "loading and error conditional rendering with Spinner and Alert present before user list",
+          "weight": 3,
+          "pass": true
+        },
+        {
+          "id": "render-components",
+          "desc": "Renders <UserList users={filteredUsers} onUserClick={handleUserClick} /> and <UserModal show={showModal} user={selectedUser} onHide={handleCloseModal} />",
+          "weight": 0,
+          "pass": true
+        }
+      ]
+    }
+  }
+}

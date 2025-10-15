@@ -1,0 +1,47 @@
+AUTOGRADER FEEDBACK REPORT
+=========================
+
+Checked repository root: c:\Users\Abdulrahman\Desktop\Swe363-Github\react styling\5-6-react-styling-fetch-data-Abdulrahman-Alhendawi\5-6-react-styling-fetch-data
+
+SUMMARY SCORES
+--------------
+Task 1 (Components & Layout): 30/30
+Task 2 (CSS Styling): 20/20
+Task 3 (Hooks & Fetch): 30/30
+
+Raw tasks score: 80/80
+Submission points: 20/20
+Submission note: On time (commit 2025-10-15T05:45:36.000Z <= due 2025-12-31T23:59:59.000Z)
+
+FINAL SCORE: 100/100
+
+DETAILED CHECKS
+---------------
+
+Task 1 — Apply Bootstrap Components (30 pts)
+ - [PASS] App.jsx uses Container tags for header, content, footer (5 pts)
+ - [PASS] Header has Bootstrap classes: bg-primary text-white py-3 mb-4 shadow and header h1 and p class props (7 pts)
+ - [PASS] SearchBar.jsx root div has mb-4 class (3 pts)
+ - [PASS] UserList uses Alert variant="info", Row and Col and returns after no-users condition and maps users into Col with UserCard (7 pts)
+ - [PASS] UserCard uses Button with text "View Details" and onClick calls onUserClick(user) (4 pts)
+ - [PASS] UserModal uses Modal with show/onHide and displays user fields and user-avatar-large and close Button (4 pts)
+
+Task 2 — Apply Custom CSS Styling (20 pts)
+ - [PASS] :root variables for theme colors (5 pts)
+ - [PASS] .app background-color and min-height rules (5 pts)
+ - [PASS] .user-card rules border:none, background-color:white, transitions (4 pts)
+ - [PASS] .user-card:hover transform and box-shadow (3 pts)
+ - [PASS] .user-avatar and .user-avatar-large rules present (3 pts)
+ - [PASS] responsive media query for .user-avatar at max-width: 768px (0 pts)
+
+Task 3 — Fetch Data with React Hooks (30 pts)
+ - [PASS] App.jsx imports useState and useEffect (3 pts)
+ - [PASS] State variables users/filteredUsers/loading/error/searchTerm/showModal/selectedUser exist (7 pts)
+ - [PASS] useEffect that fetches https://jsonplaceholder.typicode.com/users and sets state (setUsers & setFilteredUsers) (8 pts)
+ - [PASS] useEffect that filters users when searchTerm or users change (5 pts)
+ - [PASS] handleUserClick and handleCloseModal functions set selected user and show/hide modal (4 pts)
+ - [PASS] loading and error conditional rendering with Spinner and Alert present before user list (3 pts)
+ - [PASS] Renders <UserList users={filteredUsers} onUserClick={handleUserClick} /> and <UserModal show={showModal} user={selectedUser} onHide={handleCloseModal} /> (0 pts)
+
+ACTIONABLE FEEDBACK / SUGGESTIONS
+--------------------------------
